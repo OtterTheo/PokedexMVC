@@ -9,15 +9,12 @@
 		public $db;
 
 		function __construct(){
-			//on fait appel à la fonction configuration bdd
-			$conf=conf::$databases[$this->conf];
+
 			try {
 				//faire gaffe, quand on héberge un site, bien mettre sans espace entre mysql:host=
-		    	$this->db = new PDO('mysql:host='.$conf['host'].';dbname='.$conf['database'].';',
-		    		$conf['login'],
-		    		$conf['password']);
-
-
+		    	$this->db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';',
+		    		DB_USER,
+		    		DB_PASSWORD);
 			}
 				catch (PDOException $e) {
 		    	print "Erreur !: " . $e->getMessage() . "<br/>";

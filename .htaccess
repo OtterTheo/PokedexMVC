@@ -1,0 +1,13 @@
+Options +FollowSymlinks
+#on active la réécriture d'URL
+RewriteEngine on
+
+RewriteBase /PokedexMVC
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+#On prend toute l'url et on la redirige vers portfolio.index.blade.php
+RewriteRule ^([a-zA-Z0-9\-\_\/].*)$ index.php?p=$1
+
+
+

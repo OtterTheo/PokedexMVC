@@ -2,9 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b46b82-9726-48e5-9c5a-05f196bf42fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/webroot/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webroot/js/bootstrap.min.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/conf.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/conf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/AbstractModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AbstractModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +67,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,14 +88,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webroot" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Blade" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webroot" />
+      <recent name="$PROJECT_DIR$/webroot/img" />
       <recent name="$PROJECT_DIR$/core" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webroot/img/Pokemouilles" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/webroot/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,7 +115,9 @@
       <option name="presentableId" value="Default" />
       <updated>1609864646028</updated>
       <workItem from="1609864647447" duration="2458000" />
-      <workItem from="1609948538725" duration="9776000" />
+      <workItem from="1609948538725" duration="9930000" />
+      <workItem from="1610007189651" duration="1445000" />
+      <workItem from="1610009127224" duration="4824000" />
     </task>
     <task id="LOCAL-00001" summary="feat(template engine) : Add template engine">
       <created>1609958102365</created>
@@ -68,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609958102365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix(confBDD) : Fix conf credentials">
+      <created>1609958731319</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609958731319</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(template engine) : Add template engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(template engine) : Add template engine" />
+    <MESSAGE value="fix(confBDD) : Fix conf credentials" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(confBDD) : Fix conf credentials" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

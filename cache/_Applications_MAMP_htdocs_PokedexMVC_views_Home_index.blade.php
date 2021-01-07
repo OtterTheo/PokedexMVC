@@ -1,3 +1,4 @@
+<?php class_exists('Template') or exit; ?>
 <title>Pokedex</title>
 <h1>Pokemons</h1>
 
@@ -14,13 +15,13 @@
     </tr>
     </thead>
     <tbody>
-    @foreach($pokemons as $pokemon) :#
+    <?php foreach($pokemons as $pokemon) : ?>
         <tr>
-            <td>{{ $pokemon->id }}</td>
-            <td>{{ $pokemon->name }}</td>
-            <td><img width="90" height="90" alt="{{ $pokemon->name }}" src="/<?=WEBROOT2?>/webroot/img/Pokemouilles/{{ $pokemon->name }}.png"></td>
+            <td><?php echo $pokemon->id ?></td>
+            <td><?php echo $pokemon->name ?></td>
+            <td><img width="90" height="90" alt="<?php echo $pokemon->name ?>" src="/<?=WEBROOT2?>/webroot/img/Pokemouilles/<?php echo $pokemon->name ?>.png"></td>
         </tr>
-    @endforeach#
+    <?php endforeach ?>
     </tbody>
 </table>
 

@@ -44,26 +44,29 @@ if (!isset($action)) {
 
 	$action="index";
 }
-//echo "action: ".$action."<br>";
 $controller .=  "Controller";
-require ('controllers/'.$controller.'.php');
-
+if (file_exists('controllers/'.$controller.'.php')) {
+    require ('controllers/'.$controller.'.php');
 //instanciation de mon controller
-$controller = new $controller();
+    $controller = new $controller();
 
 
 
 //vérification de l'existance de l'action demandée
-if (method_exists($controller,$action)) {
-
-	//$controller->$action();
-    unset($params[0]);
-    unset($params[1]);
+    if (method_exists($controller,$action)) {
 
 
-    // Appel de la méthode $foo->bar() avec 2 arguments
-    call_user_func_array(array($controller, $action), $params);
+        unset($params[0]);
+        unset($params[1]);
+
+
+        // Appel de la méthode $foo->bar() avec 2 arguments
+        call_user_func_array(array($controller, $action), $params);
+    } else {
+        echo "Erreur 404";
+    }
 } else {
-	echo "Erreur 404";
+    echo "Erreur 404";
 }
+
 ?>

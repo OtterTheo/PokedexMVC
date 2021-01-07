@@ -16,4 +16,10 @@ class HomeController extends AbstractController
             'pokemons' => $d['pokemons']
         ]);
     }
+    function create() {
+
+    }
+    function edit() {
+
+    }
 }

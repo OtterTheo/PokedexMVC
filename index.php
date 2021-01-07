@@ -13,6 +13,7 @@ require(ROOT.'core/AbstractModel.php');
 require(ROOT.'core/View.php');
 require(ROOT.'core/Template.php');
 require(ROOT.'core/Session.php');
+require(ROOT.'core/Route.php');
 $chemin= explode("/",WEBROOT);
 /*echo "<PRE>";
 print_r ($chemin);

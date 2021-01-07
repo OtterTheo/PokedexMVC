@@ -4,22 +4,33 @@
 class HomeController extends AbstractController
 {
     function index() {
-        $d = array();
 
-        $this->loadModel('HomeModel');
-
-        $d['pokemons'] = $this->HomeModel->GetPokemons();
-
-        $this->set($d);
-
-        $this->createView('index',[
-            'pokemons' => $d['pokemons']
-        ]);
+        $this->createView('index');
     }
-    function create() {
+    function create()
+    {
 
     }
-    function edit() {
+    function store()
+    {
+
+    }
+    function edit()
+    {
+
+    }
+    function update()
+    {
+
+    }
+    function show($data)
+    {
+
+
+
+    }
+    function destroy()
+    {
 
     }
 }

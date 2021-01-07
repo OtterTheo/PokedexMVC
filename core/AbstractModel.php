@@ -1,5 +1,6 @@
 <?php
 
+
 	class AbstractModel {
 
 		public $id;
@@ -106,7 +107,7 @@
 			}
 		}
 		//find: lecture d'une ou plusieurs table --> renvoie plusieurs lignes
-		function findAll($data)
+		function findAll($data = '')
 		{
 
 				$fields="*";
@@ -140,7 +141,7 @@
 					 WHERE '.$condition.
 					 $order.'
 					 '.$limit;
-			echo $sql;
+//			echo $sql;
 			//préparation PDO
 			$sth = $this->db->prepare($sql);
 			//chargement du résultat de la requête SQL en mémoire dans un tableau

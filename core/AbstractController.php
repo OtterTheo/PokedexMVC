@@ -49,15 +49,17 @@ class AbstractController {
 		// on créer une propriété contenant l'objet instancié model
 		$this->$name = new $name;
 	}
-	protected function createView($filename, $data)
+	protected function createView($filename, $data = '')
 	{
 		//on truncate en enlevant Controller de la chaîne pour avoir que Home comme nom de dossier :)
 		$controllerClass = str_replace('Controller', '',  get_class($this));
 
 		//on crée la vue
 		$view = new View($controllerClass, $filename);
-		//
-		$this->set($data);
+		if (!empty($data)) {
+			$this->set($data);
+
+		}
 		//on rend la vue + données (j'ai fais comme ça car je peux include header, layout et footer)
 		$this->render($view->getFile(), $this->getVars());
 	}

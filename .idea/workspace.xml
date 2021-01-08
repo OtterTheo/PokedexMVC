@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b46b82-9726-48e5-9c5a-05f196bf42fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/PokedexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/PokemonModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Pokedex/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Pokedex/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webroot/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/_Applications_MAMP_htdocs_PokedexMVC_views_Home_index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AbstractController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/AbstractModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AbstractModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/HomeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Pokedex/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Pokedex/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Pokedex/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Pokedex/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +60,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core" />
       <recent name="$PROJECT_DIR$/webroot/img/Pokemouilles" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/webroot/img" />
@@ -85,6 +79,8 @@
       <workItem from="1610007189651" duration="1445000" />
       <workItem from="1610009127224" duration="10058000" />
       <workItem from="1610035340223" duration="8739000" />
+      <workItem from="1610097430857" duration="986000" />
+      <workItem from="1610116018744" duration="453000" />
     </task>
     <task id="LOCAL-00001" summary="feat(template engine) : Add template engine">
       <created>1609958102365</created>
@@ -112,6 +108,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(template engine) : Add template engine" />

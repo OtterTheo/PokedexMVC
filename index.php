@@ -13,11 +13,11 @@ require(ROOT.'core/AbstractModel.php');
 require(ROOT.'core/View.php');
 require(ROOT.'core/Template.php');
 require(ROOT.'core/Session.php');
-require(ROOT.'core/Route.php');
+require(ROOT.'core/Router.php');
+
+$router = new Router();
 $chemin= explode("/",WEBROOT);
-/*echo "<PRE>";
-print_r ($chemin);
-echo "</PRE>";*/
+
 
 define ('WEBROOT2', $chemin[1]);
 //echo "get p: ".$_GET["p"]."<br>";
@@ -26,43 +26,19 @@ if (!empty($_GET['p'])) {
 } else {
     $params=array();
 }
-/*echo "<PRE>";
-print_r ($params);
-echo "</PRE>";*/
-if (isset($params[0])) {
-    $controller = $params[0];
-}
-
-if (!isset($controller)) {
-   $controller = "Home";
+$routing = $router->createRequest($params);
 
 
-}
-if (isset($params[1])) {
-	$action=$params[1];
-}
-if (!isset($action)) {
-
-	$action="index";
-}
-$controller .=  "Controller";
-if (file_exists('controllers/'.$controller.'.php')) {
-    require ('controllers/'.$controller.'.php');
-//instanciation de mon controller
-    $controller = new $controller();
-
-
+if (file_exists('controllers/'.get_class($routing['controller']).'.php')) {
 
 //vérification de l'existance de l'action demandée
-    if (method_exists($controller,$action)) {
-
+    if (method_exists($routing['controller'],$routing['action'])) {
 
         unset($params[0]);
         unset($params[1]);
 
-
         // Appel de la méthode $foo->bar() avec 2 arguments
-        call_user_func_array(array($controller, $action), $params);
+        call_user_func_array(array($routing['controller'], $routing['action']), $params);
     } else {
         echo "Erreur 404";
     }

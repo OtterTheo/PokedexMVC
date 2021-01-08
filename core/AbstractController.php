@@ -63,6 +63,15 @@ class AbstractController {
 		//on rend la vue + données (j'ai fais comme ça car je peux include header, layout et footer)
 		$this->render($view->getFile(), $this->getVars());
 	}
+	/**
+	 * Setter for request object
+	 *
+	 * @param $request
+	 */
+	public function setRequest($request)
+	{
+		$this->request = $request;
+	}
 
 }
 ?>

@@ -1,7 +1,7 @@
 <title>{{ $pokemon->name }}</title>
 <h1>{{ $pokemon->name }} N°{{ $pokemon->id }}</h1>
 
-<link href="/<?=WEBROOT2?>/webroot/style.css" rel="stylesheet">
+<link href="/<?=WEBROOT2?>/webroot/css/style.css" rel="stylesheet">
 
 <div id="cards">
 

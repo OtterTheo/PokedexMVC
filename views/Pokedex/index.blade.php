@@ -21,7 +21,7 @@
             <td>{{ $pokemon->id }}</td>
             <td>{{ $pokemon->name }}</td>
             <td><img width="90" height="90" alt="{{ $pokemon->name }}" src="/<?=WEBROOT2?>/webroot/img/Pokemouilles/{{ $pokemon->name }}.png"></td>
-            <td><a href="Home/show/{{ $pokemon->id }}"><i class="fas fa-info-circle"></i></a></td>
+            <td><a href="Pokedex/show/{{ $pokemon->id }}"><i class="fas fa-info-circle"></i></a></td>
         </tr>
     @endforeach#
     </tbody>

@@ -25,11 +25,12 @@
     <link rel="shortcut icon" href="/<?=WEBROOT2?>/favicon.ico" type="image/x-icon">
     <link href="/<?=WEBROOT2?>/webroot/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="/<?=WEBROOT2?>/webroot/css/app.css" rel="stylesheet">
+    <link href="/<?=WEBROOT2?>/webroot/css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e2412e698c.js" crossorigin="anonymous"></script>
 
 
 </head>
-<header <?php
+<header> <?php
 //if(isset($couleurheader)){
 //    echo $couleurheader;
 //} ?>

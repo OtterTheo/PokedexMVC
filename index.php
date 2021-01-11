@@ -1,6 +1,8 @@
 <?php
-//error_reporting(E_ALL);
-//ini_set('display_errors',1);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 //portfolio.index.blade.php : dispatcher / routeur : pour aiguiller
 define ('WEBROOT', str_replace('index.php', '', $_SERVER['REQUEST_URI']));
 

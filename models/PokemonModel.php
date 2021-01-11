@@ -8,8 +8,12 @@ class PokemonModel  extends AbstractModel
 
     function GetPokemons(){
         return $this->findAll(array(
-            'fields' => "pokemon.*",
+            'fields' => "pokemon.*, type.label",
             'table' => "pokemon",
+            'inner' => "INNER JOIN pokemon_has_type on pokemon_has_type.pokemon_id = pokemon.id
+                        INNER JOIN type on type.id = pokemon_has_type.type_id",
+            'order' => 'pokemon.id ASC'
+
         ));
     }
 

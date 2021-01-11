@@ -5,6 +5,10 @@ class AbstractController {
 	var $layout = "layout";
 	var $header = "header";
 	var $footer = "footer";
+	/**
+	 * @var Session
+	 */
+	protected $Session;
 
 	function __construct() {
 	    $this->Session = new Session();
@@ -71,6 +75,10 @@ class AbstractController {
 	public function setRequest($request)
 	{
 		$this->request = $request;
+	}
+
+	public function getPost(){
+		return $_POST;
 	}
 
 }

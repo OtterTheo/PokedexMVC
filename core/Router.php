@@ -69,4 +69,8 @@ class Router
             throw new Exception('Fichier ' . $controllerFile . ' introuvable');
         }
     }
+    public function getRequest()
+    {
+        return $this->request;
+    }
 }

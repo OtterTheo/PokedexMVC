@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b46b82-9726-48e5-9c5a-05f196bf42fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/TypeModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Pokedex/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/conf.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/conf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/PokedexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/PokedexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AbstractController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/AbstractModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AbstractModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/PokemonModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/PokemonModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/Pokedex/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Pokedex/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/Pokedex/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Pokedex/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webroot/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webroot/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +89,8 @@
       <workItem from="1610009127224" duration="10058000" />
       <workItem from="1610035340223" duration="8739000" />
       <workItem from="1610097430857" duration="986000" />
-      <workItem from="1610116018744" duration="453000" />
+      <workItem from="1610116018744" duration="6734000" />
+      <workItem from="1610357064575" duration="4331000" />
     </task>
     <task id="LOCAL-00001" summary="feat(template engine) : Add template engine">
       <created>1609958102365</created>
@@ -103,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610014810808</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix(router) : Fix router">
+      <created>1610116550466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610116550466</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +133,8 @@
     <MESSAGE value="feat(template engine) : Add template engine" />
     <MESSAGE value="fix(confBDD) : Fix conf credentials" />
     <MESSAGE value="feat(pokemon) : Add img + Bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(pokemon) : Add img + Bootstrap" />
+    <MESSAGE value="fix(router) : Fix router" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(router) : Fix router" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

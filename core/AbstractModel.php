@@ -6,7 +6,6 @@
 		public $id;
 		public $iduser;
 		public $table;
-		public $conf='default';
 		public $db;
 
 		function __construct(){
@@ -37,9 +36,6 @@
 			//chargement du résultat de la requête SQL en mémoire dans un tableau
 			if ($sth->execute(array(':id' => $this->id))){
 				$data = $sth->fetch(PDO::FETCH_OBJ);
-//				echo "<PRE>";
-//				print_r($data);
-//				echo "</PRE>";
 				foreach ($data as $key=>$value)
 				{
 					//on peut créer "à la volée" les propriété de la classe
@@ -68,9 +64,7 @@
 				$values = substr($values, 0 ,-1);
 				$sql.=") VALUES(".$values.")";
 
-
-
-				//echo $sql;
+//				echo $sql;
 				//prépration SQL
 				$sth = $this->db->prepare($sql);
 

@@ -1,10 +1,15 @@
 <?php
+
+
+use App\Http\Request\Request;
+
 class AbstractController {
 
 	var $vars = array();
 	var $layout = "layout";
 	var $header = "header";
 	var $footer = "footer";
+	public $controller;
 	/**
 	 * @var Session
 	 */
@@ -15,7 +20,7 @@ class AbstractController {
     }
 
 	function render($filename, $data = []) {
-
+		$this->controller = $filename;
 		//on fait passer nos données à la vue
 		extract($this->vars);
 
@@ -79,6 +84,16 @@ class AbstractController {
 
 	public function getPost(){
 		return $_POST;
+	}
+	public function store() {
+		$req = new Request();
+		$params = explode("/", $_GET["p"]);
+		$requestName = $params['0'].'Request';
+		$requestName = $req->datacheck($requestName);
+
+
+		var_dump($requestName);
+		die();
 	}
 
 }

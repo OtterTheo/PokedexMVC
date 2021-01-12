@@ -64,7 +64,7 @@
 				$values = substr($values, 0 ,-1);
 				$sql.=") VALUES(".$values.")";
 
-//				echo $sql;
+				echo $sql;
 				//prépration SQL
 				$sth = $this->db->prepare($sql);
 
@@ -88,7 +88,7 @@
 				//enleve le dernier caractère, donc la virgule
 				$sql = substr($sql, 0 ,-1);
 				$sql.= " WHERE id=".$this->id;
-				//echo $sql;
+				echo $sql;
 				//prépration SQL
 				$sth = $this->db->prepare($sql);
 
@@ -135,7 +135,7 @@
 					 WHERE '.$condition.
 					 $order.'
 					 '.$limit;
-//			echo $sql;
+			echo $sql;
 			//préparation PDO
 			$sth = $this->db->prepare($sql);
 			//chargement du résultat de la requête SQL en mémoire dans un tableau

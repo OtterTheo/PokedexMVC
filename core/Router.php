@@ -31,6 +31,11 @@ class Router
 
             $action = "index";
         }
+        //appel de la request correspondante
+        if(file_exists('./requests/'.$controller.'Request.php')) {
+            require_once ('./requests/'.$controller.'Request.php');
+        }
+
         // On récupère les données en GET et en POST
         $this->request = array_merge($_GET, $_POST);
 

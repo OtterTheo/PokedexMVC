@@ -5,7 +5,7 @@
             <input name="name" class="form-control" type="text" placeholder="Nom du pokémon">
         </div>
         <div class="form-group col-2 m-auto mb-md-3">
-            <select class="form-select" >
+            <select name="type" class="form-select" >
                 <option selected>Type</option>
                 @foreach($types as $type) : #
                 <option value="{{ $type->id }}" >{{ $type->label }}</option>

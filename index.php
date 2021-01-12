@@ -16,6 +16,7 @@ require(ROOT.'core/View.php');
 require(ROOT.'core/Template.php');
 require(ROOT.'core/Session.php');
 require(ROOT.'core/Router.php');
+require(ROOT.'core/Request.php');
 
 $router = new Router();
 $chemin= explode("/",WEBROOT);

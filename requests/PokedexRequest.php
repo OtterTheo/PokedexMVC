@@ -28,7 +28,7 @@ class PokedexRequest extends Request
     {
         $rules = [
             'name' => 'string|required',
-            'type' => 'integer',
+            'type' => 'required',
         ];
 
         return $rules;

@@ -11,7 +11,6 @@ class PokedexController extends AbstractController
         $this->loadModel('PokemonModel');
 
         $d['pokemons'] = $this->PokemonModel->GetPokemons();
-
         $this->set($d);
 //        $i = 1;
 //        echo '<PRE>';
@@ -29,27 +28,28 @@ class PokedexController extends AbstractController
             'pokemons' => $d['pokemons']
         ]);
     }
-    function create()
+    function create($messages = null)
     {
         $d = array();
 
         $this->loadModel('TypeModel');
 
         $d['types'] = $this->TypeModel->findAll();
-
+        $d['messages'] = $messages;
         $this->set($d);
 
         $this->createView('create',[
-            'types' => $d['types']
+            'types' => $d['types'],
+            'messages' => $messages
         ]);
     }
     function store()
     {
         parent::store();
-//        var_dump($this->getPost());
-//        die();
+
         $this->loadModel('PokemonModel');
-        $this->PokemonModel->save($this->getPost());
+
+        $this->PokemonModel->SavePokemon($this->getPost());
         $this->Session->setFlash("Votre mis à jour a bien était prit en compte","success");
 
         $d['pokemons'] = $this->PokemonModel->GetPokemons();

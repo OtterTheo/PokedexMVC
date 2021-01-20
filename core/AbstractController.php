@@ -10,6 +10,7 @@ class AbstractController {
 	var $header = "header";
 	var $footer = "footer";
 	public $controller;
+	protected $responses;
 	/**
 	 * @var Session
 	 */
@@ -21,6 +22,7 @@ class AbstractController {
 
 	function render($filename, $data = []) {
 		$this->controller = $filename;
+
 		//on fait passer nos données à la vue
 		extract($this->vars);
 
@@ -62,7 +64,6 @@ class AbstractController {
 	{
 		//on truncate en enlevant Controller de la chaîne pour avoir que Home comme nom de dossier :)
 		$controllerClass = str_replace('Controller', '',  get_class($this));
-
 		//on crée la vue
 		$view = new View($controllerClass, $filename);
 		if (!empty($data)) {
@@ -89,11 +90,7 @@ class AbstractController {
 		$req = new Request();
 		$params = explode("/", $_GET["p"]);
 		$requestName = $params['0'].'Request';
-		$requestName = $req->datacheck($requestName);
-
-
-		var_dump($requestName);
-		die();
+		$this->responses = $req->datacheck($requestName);
 	}
 
 }

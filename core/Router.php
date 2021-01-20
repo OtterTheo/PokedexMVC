@@ -62,7 +62,7 @@ class Router
 
         if (file_exists($controllerFile)) {
             // Instanciation du contrôleur adapté à la requête
-            require($controllerFile);
+            require_once($controllerFile);
 
             $ControllerInstancie = new $controllerClass();
 

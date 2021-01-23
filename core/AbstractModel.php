@@ -49,17 +49,15 @@ class AbstractModel
 
     //save : insertion ou une modifcation d'une ligne dans la BDD
     function save($conditions, $data)
-    {    //on verifie si id existe
+    {
+        $tabTempo = [];
+        //on verifie si id existe
         if (empty($data["id"])) {
             unset($data['id']);
 
-            if (isset($conditions['table'])) {
-                $this->table = $conditions['table'];
-            }
-            if (isset($conditions['fields'])) {
-                $fields = explode(',', $conditions['fields']);
-            }
+            isset($conditions['table']) ? $this->table = $conditions['table'] : '';
 
+            isset($conditions['fields']) ? $fields = explode(',', $conditions['fields']) : '';
             foreach ($data as $key => $value) {
                 if (array_search($key, $fields) !== false) {
                     '';
@@ -67,11 +65,13 @@ class AbstractModel
                     unset($data[$key]);
                 }
             }
-
             //construction requete SQL
             $sql = "INSERT INTO " . $this->table . "(";
             $values = "";
             foreach ($data as $key => $value) {
+                if (is_array($value)) {
+                    $tabTempo['type_id'] = $value;
+                }
                 $sql .= $key . ",";
                 $values .= ":" . $key . ",";
             }
@@ -80,18 +80,33 @@ class AbstractModel
             $values = substr($values, 0, -1);
             $sql .= ") VALUES(" . $values . ")";
 
-            echo $sql;
+//            echo $sql;
             //prépration SQL
+
             $sth = $this->db->prepare($sql);
+            if (!empty($tabTempo)) {
+                $newData['pokemon_id'] = $data['pokemon_id'];
 
-            //exécution SQL
-            if ($sth->execute($data)) {
-                //echo "Insertion OK : ".$this->db->lastInsertId();
-                $this->id = $this->db->lastInsertId();
+                foreach ($tabTempo as $key => $value) {
+                    if (is_array($value)) {
+                        for ($i = 0; $i < count($value); $i++) {
+                            $newData[$key] = $value[$i];
+                            $sth->execute($newData);
+                        }
+                    } else {
+                        $newData['type_id'] = $value;
+                        $sth->execute($newData);
+                    }
+                }
             } else {
-                echo "erreur SQL";
+                //exécution SQL
+                if ($sth->execute($data)) {
+                    //echo "Insertion OK : ".$this->db->lastInsertId();
+                    $this->id = $this->db->lastInsertId();
+                } else {
+                    echo "erreur SQL";
+                }
             }
-
         } else {
             $this->id = $data['id'];
             //construction requete SQL

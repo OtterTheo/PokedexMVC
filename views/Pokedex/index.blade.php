@@ -1,5 +1,5 @@
 <title>Pokedex</title>
-<h1>Pokemons</h1>
+<h1 class="justify-content-center" style="display: flex;">Pokemons</h1>
 
 <div class="container">
     <div class="col-md-10 d-inline-flex">

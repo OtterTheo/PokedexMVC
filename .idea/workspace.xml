@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b46b82-9726-48e5-9c5a-05f196bf42fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/AbstractModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AbstractModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requests/PokedexRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/requests/PokedexRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Pokedex/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Pokedex/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Pokedex/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Pokedex/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -88,7 +83,8 @@
       <workItem from="1611073820017" duration="2015000" />
       <workItem from="1611160135241" duration="6652000" />
       <workItem from="1611246856458" duration="418000" />
-      <workItem from="1611395866214" duration="7459000" />
+      <workItem from="1611395866214" duration="7574000" />
+      <workItem from="1611562723213" duration="3741000" />
     </task>
     <task id="LOCAL-00001" summary="feat(template engine) : Add template engine">
       <created>1609958102365</created>
@@ -139,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611167077496</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(readme) : Ajout du README&#10;fix(abstract_model) : Corretion de la fonction save pour prise en complte du select multiple">
+      <created>1611404660240</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611404660240</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +167,8 @@
     <MESSAGE value="fix(router) : Fix router" />
     <MESSAGE value="feat(request) : Add Request and get_rules" />
     <MESSAGE value="feat(save) : Save Pokemon + router + request" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(save) : Save Pokemon + router + request" />
+    <MESSAGE value="feat(readme) : Ajout du README&#10;fix(abstract_model) : Corretion de la fonction save pour prise en complte du select multiple" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(readme) : Ajout du README&#10;fix(abstract_model) : Corretion de la fonction save pour prise en complte du select multiple" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

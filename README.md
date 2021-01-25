@@ -1,6 +1,6 @@
 <h1 align="center">Pokedex</h1>
 
-![alt text](webroot/img/pokedex.png)
+![img_readme](./webroot/img/pokedex.png)
 
 ## Décomposition du code : 
 
